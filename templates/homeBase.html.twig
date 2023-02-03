@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="KAFOUDAL" />
+	<meta name="keywords" content="KAFOUDAL" /> 
+    <meta charset="UTF-8">
+        <title>{% block title %}KAFOUDAL{% endblock %}</title>
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+</head>  
+<body> 
+{% block body %}
+    <table BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
+		<tr>
+			<td BACKGROUND="fade.gif">
+				&middot;
+					<a HREF="home/index.html.twig"></a>		
+			</td>
+		</tr>
+	</table> 
+	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=home/index.html.twig"> 
+{% endblock %} 
+</body> 
+</html>
+
+

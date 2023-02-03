@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="BROU YAO ERIC" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="keywords" content="KAFOUDAL" />
+        <meta name="description" content="KAFOUDAL" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+         <!-- favicon -->
+    <link rel="shortcut icon" href=" {{ asset('img/logos/favicon.png') }} ">
+    <link rel="apple-touch-icon" href="{{ asset('img/logos/apple-touch-icon-57x57.png') }} ">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('img/logos/apple-touch-icon-72x72.png') }} ">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('img/logos/apple-touch-icon-114x114.png') }} ">
+
+     <!-- plugins -->
+     <link rel="stylesheet" href="{{ asset('css/plugins.css') }} ">
+
+     <!-- revolution slider css -->
+     <link rel="stylesheet" href="{{ asset('css/rev_slider/settings.css') }} ">
+     <link rel="stylesheet" href="{{ asset('css/rev_slider/layers.css') }} ">
+     <link rel="stylesheet" href="{{ asset('css/rev_slider/navigation.css') }} ">
+ 
+     <!-- quform css -->
+     <link rel="stylesheet" href="{{ asset('quform/css/base.css') }} ">
+ 
+     <!-- search css -->
+     <link rel="stylesheet" href="{{ asset('search/search.css') }} ">
+ 
+     <!-- theme core css -->
+     <link href="{{ asset('css/styles.css') }} " rel="stylesheet">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        <div id="preloader"></div>
+        <div class="main-wrapper">
+            {% include "layouts/_header.html.twig" %} 
+            {% block body %}{% endblock %} 
+            <!-- FOOTER
+        ================================================== -->
+        <footer>
+            <div class="container">
+                <div class="row mt-n1-9">
+
+                    <div class="col-lg-4 col-md-6 mt-1-9">
+
+                        <img alt="footer-logo" src="img/logos/logo-footer.png">
+                        <p class="mt-4 text-light-gray">Nemo enim enim voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+                        <div class="mt-4 footer-social-icons">
+                            <ul class="ps-0 mb-0">
+                                <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 mt-1-9">
+                        <h3 class="text-white">Quick Links</h3>
+                        <ul class="footer-list ps-0">
+                            <li><a href="#!">Financial Planning</a></li>
+                            <li><a href="#!">Software &amp; Research</a></li>
+                            <li><a href="#!">Market Research</a></li>
+                            <li><a href="#!">Sales Services</a></li>
+                            <li><a href="#!">Healthcare Services</a></li>
+                            <li><a href="#!">Market Analysis</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-1-9">
+                        <h3 class="text-white">Recent Posts</h3>
+
+                        <div class="clearfix footer-recent-post mt-0">
+                            <div class="footer-recent-post-thumb"><img alt="..." src="img/thumbs/t-1.jpg"></div>
+                            <div class="footer-recent-post-content"><a href="#!">Your Consultant Business</a><span>March 25, 2022</span></div>
+                        </div>
+                        <div class="clearfix footer-recent-post">
+                            <div class="footer-recent-post-thumb"><img alt="..." src="img/thumbs/t-2.jpg"></div>
+                            <div class="footer-recent-post-content"><a href="#!">Always Look On The Glorious.</a> <span>Jan 5, 2022</span></div>
+                        </div>
+                        <div class="clearfix footer-recent-post">
+                            <div class="footer-recent-post-thumb"><img alt="..." src="img/thumbs/t-3.jpg"></div>
+                            <div class="footer-recent-post-content"><a href="#!">Markets Research Financial.</a> <span>Feb 12, 2022</span></div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-1-9">
+                        <h3 class="text-white">Newsletter</h3>
+                        <p class="text-light-gray mb-3">Nemo enim enim voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+                        <form class="quform newsletter-form1" action="https://fabrex.websitelayout.net/quform/newsletter-two.php" method="post" enctype="multipart/form-data" onclick="">
+
+                            <div class="quform-elements text-center">
+
+                                <div class="row">
+
+                                    <!-- Begin Text input element -->
+                                    <div class="col-md-12">
+                                        <div class="quform-element form-group mb-0">
+                                            <div class="quform-input">
+                                                <input class="form-control" id="email_address" type="email" name="email_address" placeholder="Subscribe with us">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Text input element -->
+
+                                    <!-- Begin Submit button -->
+                                    <div class="col-md-12">
+                                        <div class="quform-submit-inner">
+                                            <button class="butn medium primary" type="submit"><span><i class="fas fa-paper-plane"></i></span></button>
+                                        </div>
+                                        <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
+                                    </div>
+                                    <!-- End Submit button -->
+
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bar">
+                <div class="container">
+                    <p class="mb-0">&copy; <span class="current-year"></span> Fabrex is Powered by <a href="https://www.chitrakootweb.com/" target="_blank" class="text-light-gray">Chitrakoot Web</a></p>
+                </div>
+            </div>
+        </footer>
+        </div>
+
+             <!-- jQuery -->
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+
+    <!-- popper js -->
+    <script src="{{ asset('js/popper.min.js') }}"></script>
+
+    <!-- bootstrap -->
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+
+    <!-- core.min.js -->
+    <script src="{{ asset('js/core.min.js') }}"></script>
+
+    <!-- search -->
+    <script src="{{ asset('search/search.js') }}"></script>
+
+    <!-- revolution slider js files start -->
+    <script src="{{ asset('js/rev_slider/jquery.themepunch.tools.min.js') }}"></script>
+    <script src="{{ asset('js/rev_slider/jquery.themepunch.revolution.min.js') }}"></script>
+    <script src="{{ asset('js/rev_slider/extensions/revolution.extension.actions.min.js') }}"></script>
+    <script src="{{ asset('js/rev_slider/extensions/revolution.extension.carousel.min.js') }}"></script>
+    <script src="{{ asset('js/rev_slider/extensions/revolution.extension.kenburn.min.js') }}"></script>
+    <script src="{{ asset('js/rev_slider/extensions/revolution.extension.layeranimation.min.js') }}"></script>
+    <script src="{{ asset('js/rev_slider/extensions/revolution.extension.migration.min.js') }}"></script>
+    <script src="{{ asset('js/rev_slider/extensions/revolution.extension.navigation.min.js') }}"></script>
+    <script src="{{ asset('js/rev_slider/extensions/revolution.extension.parallax.min.js') }}"></script>
+    <script src="{{ asset('js/rev_slider/extensions/revolution.extension.slideanims.min.js') }}"></script>
+    <script src="{{ asset('js/rev_slider/extensions/revolution.extension.video.min.js') }}"></script>
+
+    <!-- theme core scripts -->
+    <script src="{{ asset('js/main.js') }}"></script>
+
+    <!-- quform plugins js -->
+    <script src="{{ asset('quform/js/plugins.js') }}"></script>
+
+    <!-- quform scripts js -->
+    <script src="{{ asset('quform/js/scripts.js') }}"></script>
+
+    <!-- all js include end -->
+    </body>
+</html>
